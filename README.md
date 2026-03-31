@@ -22,7 +22,7 @@
 <a href="mailto:rmiranda1254@gmail.com" target="_blank">
 <img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" alt="gmail" />
 </a>
-<a href="https://github.com/Roberto12541" target="_blank">
+<a href="https://github.com/RobertoMCov" target="_blank">
 <img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" />
 </a>
 </div>  
@@ -58,11 +58,11 @@
 
 ## 📊 Github Stats:
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Roberto12541&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RobertoMCov&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div> 
 
 <br/>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Roberto12541&style=flat-square&color=blue" align="center" />
+  <img src="https://komarev.com/ghpvc/?username=RobertoMCov&style=flat-square&color=blue" align="center" />
 </div>
