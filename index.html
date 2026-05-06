@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roberto Adrián Miranda Meza | Portfolio</title>
+  
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS 4 (Para despliegue instantáneo sin compilación) -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  
+  <!-- Animaciones básicas ligeras de entrada -->
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .fade-up {
+      animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-[#0A0A0C] text-slate-300 font-sans selection:bg-sky-500/30 selection:text-white relative overflow-x-hidden">
+  
+  <!-- Brillos sutiles del fondo -->
+  <div class="fixed top-[-10%] right-[-10%] w-[500px] h-[500px] bg-sky-900/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
+  <div class="fixed bottom-[-5%] left-[-5%] w-[300px] h-[300px] bg-purple-900/10 blur-[100px] rounded-full pointer-events-none z-0"></div>
+
+  <!-- Navegación -->
+  <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-[#0A0A0C]/90 backdrop-blur-xl border-b border-slate-800/80 py-3 shadow-2xl shadow-black/50">
+    <div class="max-w-6xl mx-auto px-6 h-12 flex items-center justify-between">
+      <span class="font-bold text-white tracking-[0.1em] text-xs uppercase flex items-center gap-2">
+        <span class="flex h-1.5 w-1.5 rounded-full bg-sky-400 animate-pulse"></span>
+        RAMM.
+      </span>
+      <div class="flex gap-8 text-[11px] font-bold uppercase tracking-[0.1em]">
+        <a href="#about" class="text-slate-400 hover:text-white transition-colors">Sobre mí</a>
+        <a href="#projects" class="text-slate-400 hover:text-white transition-colors hidden sm:block">Proyectos</a>
+        <a href="#experience" class="text-slate-400 hover:text-white transition-colors hidden sm:block">Trayectoria</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 pt-32 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-y-24 lg:gap-x-16 relative z-10 w-full">
+    
+    <!-- Columna Izquierda (Fija/Hero) -->
+    <section id="about" class="lg:col-span-5 lg:sticky lg:top-32 self-start scroll-mt-32 fade-up">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full text-[10px] font-bold tracking-widest text-sky-400 uppercase mb-8">
+        <span class="flex h-1.5 w-1.5 rounded-full bg-sky-400 animate-pulse"></span>
+        Open for new projects
+      </div>
+      <h1 class="text-5xl font-black text-white leading-[1.1] tracking-tighter mb-4">
+        Roberto Adrián <br />
+        <span class="text-slate-500">Miranda Meza</span>
+      </h1>
+      <h2 class="text-xl font-medium text-sky-400 mb-6">Software Developer</h2>
+      
+      <p class="text-slate-400 text-sm leading-relaxed max-w-[320px] mb-8 italic">
+        "Especialista en ecosistemas JavaScript/TypeScript, construyendo arquitecturas web modernas con enfoque en rendimiento y escalabilidad."
+      </p>
+      
+      <div class="flex flex-wrap gap-3 items-center">
+        <!-- BOTONES DE CONTACTO -->
+        <a href="mailto:robertomiranda1254@gmail.com" class="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-800 text-slate-300 px-4 py-2.5 rounded text-xs font-bold uppercase tracking-widest hover:text-white hover:bg-slate-800 hover:border-slate-700 transition-all shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Contactar
+        </a>
+        <a href="https://github.com/robertomcov" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-800 text-slate-300 px-4 py-2.5 rounded text-xs font-bold uppercase tracking-widest hover:text-white hover:bg-slate-800 hover:border-slate-700 transition-all shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg> GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-800 text-slate-300 px-4 py-2.5 rounded text-xs font-bold uppercase tracking-widest hover:text-white hover:bg-slate-800 hover:border-slate-700 transition-all shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn
+        </a>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="mt-16">
+        <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">Stack Tecnológico</h3>
+        <div class="flex flex-wrap gap-2">
+          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">React 19</div>
+          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Next.js 16</div>
+          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">TypeScript</div>
+          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Tailwind CSS 4</div>
+          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Node.js</div>
+          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Express</div>
+          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">SQL Server (T-SQL)</div>
+          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Git</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Columna Derecha (Scroll) -->
+    <!-- Proyectos -->
+    <section id="projects" class="lg:col-span-7 lg:col-start-6 scroll-mt-24 fade-up" style="animation-delay: 0.1s">
+      <div class="flex items-center gap-4 mb-6">
+        <h3 class="text-sm font-bold uppercase tracking-[0.2em] text-white">Proyectos Destacados</h3>
+        <div class="h-px flex-1 bg-slate-800"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        
+        <!-- Tu Nuevo Proyecto Universitario -->
+        <a href="https://robertomcov.github.io/FormacionSociocultural-IV/" target="_blank" rel="noreferrer" class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-pointer">
+          <div>
+            <h4 class="text-white font-bold text-base mb-2 flex items-center justify-between">
+              Aprendiendo a Aprender
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-hover:opacity-100 text-sky-400 transition-all translate-x-[-10px] group-hover:translate-x-0"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </h4>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">
+              Plataforma educativa universitaria para la asignatura de Formación Sociocultural. Incluye temario interactivo, actividades didácticas, juegos y evaluaciones con Microsoft Forms.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="text-[10px] font-mono text-slate-500">HTML5</span>
+            <span class="text-[10px] font-mono text-slate-500">Bootstrap</span>
+            <span class="text-[10px] font-mono text-slate-500">Responsive</span>
+          </div>
+        </a>
+
+        <!-- CRM -->
+        <div class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-default">
+          <div>
+            <h4 class="text-white font-bold text-base mb-2 flex items-center justify-between">CRM API Engine</h4>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">
+              Panel administrativo interactivo con integración de API, gráficos de rendimiento y dashboards para métricas comerciales.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="text-[10px] font-mono text-slate-500">Next.js 16</span>
+            <span class="text-[10px] font-mono text-slate-500">Node.js</span>
+            <span class="text-[10px] font-mono text-slate-500">SQL Server</span>
+            <span class="text-[10px] font-mono text-slate-500">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- E-commerce -->
+        <div class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-default">
+          <div>
+            <h4 class="text-white font-bold text-base mb-2 flex items-center justify-between">E-commerce Mobile-First</h4>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">
+              Plataforma de ventas optimizada para móviles con rendimiento ultra-rápido, gestión de estado compleja y animaciones fluidas.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="text-[10px] font-mono text-slate-500">React 19</span>
+            <span class="text-[10px] font-mono text-slate-500">Tailwind CSS 4</span>
+            <span class="text-[10px] font-mono text-slate-500">TypeScript</span>
+          </div>
+        </div>
+        
+        <!-- Inventario -->
+        <div class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-default">
+          <div>
+            <h4 class="text-white font-bold text-base mb-2 flex items-center justify-between">Software de Inventario</h4>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">
+              Control integral de stock para empresas medianas. Incluye generación rápida de reportes a demanda y transacciones seguras.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="text-[10px] font-mono text-slate-500">React</span>
+            <span class="text-[10px] font-mono text-slate-500">Express</span>
+            <span class="text-[10px] font-mono text-slate-500">T-SQL</span>
+            <span class="text-[10px] font-mono text-slate-500">Node.js</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Trayectoria -->
+    <section id="experience" class="lg:col-span-7 lg:col-start-6 scroll-mt-24 fade-up" style="animation-delay: 0.2s">
+      <div class="flex items-center gap-4 mb-6">
+        <h3 class="text-sm font-bold uppercase tracking-[0.2em] text-white">Experiencia & Educación</h3>
+        <div class="h-px flex-1 bg-slate-800"></div>
+      </div>
+      
+      <div class="space-y-8 ml-2 border-l border-slate-800 pl-8">
+        <!-- Exp 1 -->
+        <div class="relative">
+          <div class="absolute -left-[37px] top-1.5 h-4 w-4 bg-[#0A0A0C] border rounded-full flex items-center justify-center border-sky-500">
+            <div class="h-1.5 w-1.5 bg-sky-500 rounded-full"></div>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between items-baseline mb-1">
+            <h4 class="text-sm font-bold text-white">Senior Software Developer</h4>
+            <span class="text-[10px] font-mono text-slate-500 mt-1 sm:mt-0">2021 - Presente</span>
+          </div>
+          <p class="text-[11px] text-slate-400 uppercase tracking-widest font-semibold mb-2">Empresa Tecnológica</p>
+          <p class="text-xs text-slate-500 leading-relaxed">
+           Liderazgo en el desarrollo de arquitecturas frontend y backend. Mejora del ecosistema de componentes, reduciendo la deuda técnica y optimizando tiempos de carga en un 40%.
+          </p>
+        </div>
+
+        <!-- Exp 2 -->
+        <div class="relative">
+          <div class="absolute -left-[37px] top-1.5 h-4 w-4 bg-[#0A0A0C] border rounded-full flex items-center justify-center border-slate-700"></div>
+          <div class="flex flex-col sm:flex-row sm:justify-between items-baseline mb-1">
+            <h4 class="text-sm font-bold text-white">Frontend Developer</h4>
+            <span class="text-[10px] font-mono text-slate-500 mt-1 sm:mt-0">2018 - 2021</span>
+          </div>
+          <p class="text-[11px] text-slate-400 uppercase tracking-widest font-semibold mb-2">Agencia Digital</p>
+          <p class="text-xs text-slate-500 leading-relaxed">
+           Creación de interfaces de usuario altamente responsivas y minimalistas. Colaboración estrecha con equipos de diseño UI/UX para asegurar la fidelidad al diseño.
+          </p>
+        </div>
+
+        <!-- Exp 3 -->
+        <div class="relative">
+          <div class="absolute -left-[37px] top-1.5 h-4 w-4 bg-[#0A0A0C] border rounded-full flex items-center justify-center border-slate-700"></div>
+          <div class="flex flex-col sm:flex-row sm:justify-between items-baseline mb-1">
+            <h4 class="text-sm font-bold text-white">Ingeniería en Software</h4>
+            <span class="text-[10px] font-mono text-slate-500 mt-1 sm:mt-0">2014 - 2018</span>
+          </div>
+          <p class="text-[11px] text-slate-400 uppercase tracking-widest font-semibold mb-2">Educación Universitaria</p>
+          <p class="text-xs text-slate-500 leading-relaxed">
+           Graduado con fundamentos sólidos en ingeniería de software, arquitectura de sistemas y bases de datos relacionales, aplicando esto al desarrollo de herramientas internas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/60 mt-12 relative z-10 w-full bg-[#0A0A0C]/50 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <p class="text-slate-500 text-[11px] font-mono">
+        © 2026 Roberto Miranda. Creado con HTML y Tailwind CSS.
+      </p>
+      <div class="flex gap-6">
+        <a href="https://github.com/robertomcov" class="text-xs font-semibold hover:text-white transition-colors uppercase tracking-widest text-slate-500">
+          GitHub
+        </a>
+        <a href="https://linkedin.com" class="text-xs font-semibold hover:text-white transition-colors uppercase tracking-widest text-slate-500">
+          LinkedIn
+        </a>
+        <a href="mailto:robertomiranda1254@gmail.com" class="text-xs font-semibold hover:text-white transition-colors uppercase tracking-widest text-slate-500">
+          Contact
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
