@@ -5,14 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roberto Adrián Miranda Meza | Portfolio</title>
   
-  <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Tailwind CSS 4 (Para despliegue instantáneo sin compilación) -->
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   
-  <!-- Animaciones básicas ligeras de entrada -->
   <style>
     body { font-family: 'Inter', sans-serif; }
     .fade-up {
@@ -27,12 +24,10 @@
 </head>
 <body class="bg-[#0A0A0C] text-slate-300 font-sans selection:bg-sky-500/30 selection:text-white relative overflow-x-hidden">
   
-  <!-- Brillos sutiles del fondo -->
   <div class="fixed top-[-10%] right-[-10%] w-[500px] h-[500px] bg-sky-900/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
   <div class="fixed bottom-[-5%] left-[-5%] w-[300px] h-[300px] bg-purple-900/10 blur-[100px] rounded-full pointer-events-none z-0"></div>
 
-  <!-- Navegación -->
-  <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-[#0A0A0C]/90 backdrop-blur-xl border-b border-slate-800/80 py-3 shadow-2xl shadow-black/50">
+  <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-[#0A0A0C]/70 backdrop-blur-xl border-b border-slate-800/80 py-3 shadow-2xl shadow-black/50">
     <div class="max-w-6xl mx-auto px-6 h-12 flex items-center justify-between">
       <span class="font-bold text-white tracking-[0.1em] text-xs uppercase flex items-center gap-2">
         <span class="flex h-1.5 w-1.5 rounded-full bg-sky-400 animate-pulse"></span>
@@ -48,7 +43,6 @@
 
   <main class="max-w-6xl mx-auto px-6 pt-32 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-y-24 lg:gap-x-16 relative z-10 w-full">
     
-    <!-- Columna Izquierda (Fija/Hero) -->
     <section id="about" class="lg:col-span-5 lg:sticky lg:top-32 self-start scroll-mt-32 fade-up">
       <div class="inline-flex items-center gap-2 px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full text-[10px] font-bold tracking-widest text-sky-400 uppercase mb-8">
         <span class="flex h-1.5 w-1.5 rounded-full bg-sky-400 animate-pulse"></span>
@@ -58,14 +52,13 @@
         Roberto Adrián <br />
         <span class="text-slate-500">Miranda Meza</span>
       </h1>
-      <h2 class="text-xl font-medium text-sky-400 mb-6">Software Engineer | Full Stack Developer</h2>
+      <h2 class="text-xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400 mb-6">Software Engineer | Full Stack Developer</h2>
       
       <p class="text-slate-400 text-sm leading-relaxed max-w-[320px] mb-8 italic">
-        "3.5 años de experiencia resolviendo retos técnicos en entornos industriales, especializado en Next.js y SQL Server con integración al ERP Intelisis."
+        "Ingeniero de Software con 3.5 años de experiencia resolviendo retos técnicos en entornos industriales. Especializado en el desarrollo de aplicaciones web modernas con Next.js y la gestión avanzada de datos en SQL Server con integración al ERP Intelisis."
       </p>
       
       <div class="flex flex-wrap gap-3 items-center">
-        <!-- BOTONES DE CONTACTO -->
         <a href="mailto:rmiranda1254@gmail.com" class="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-800 text-slate-300 px-4 py-2.5 rounded text-xs font-bold uppercase tracking-widest hover:text-white hover:bg-slate-800 hover:border-slate-700 transition-all shadow-sm">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Contactar
         </a>
@@ -77,28 +70,48 @@
         </a>
       </div>
 
-      <!-- Tech Stack -->
       <div class="mt-16">
         <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">Stack Tecnológico</h3>
-        <div class="flex flex-wrap gap-2">
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">React 19</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Next.js 16</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Tailwind CSS 4</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Ant Design</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">JavaScript (ES6+)</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Node.js</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Express</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">SQL Server (T-SQL)</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Stored Procedures</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">ERP Intelisis</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Git/GitHub</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">PM2</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Postman</div>
-          <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Docker</div>
+        
+        <div class="space-y-4">
+          <div>
+            <h4 class="text-[9px] font-bold uppercase tracking-[0.1em] text-slate-600 mb-2">Frontend</h4>
+            <div class="flex flex-wrap gap-2">
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">React 19</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Next.js 16</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Tailwind CSS 4</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Ant Design</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">JavaScript (ES6+)</div>
+            </div>
+          </div>
+          
+          <div>
+            <h4 class="text-[9px] font-bold uppercase tracking-[0.1em] text-slate-600 mb-2">Backend & DB</h4>
+            <div class="flex flex-wrap gap-2">
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Node.js</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Express</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">SQL Server (T-SQL)</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Stored Procedures</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Triggers</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Jobs</div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-[9px] font-bold uppercase tracking-[0.1em] text-slate-600 mb-2">Herramientas</h4>
+            <div class="flex flex-wrap gap-2">
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">ERP Intelisis</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Git/GitHub</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">PM2</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Postman</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">Docker</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-300 hover:bg-slate-800 hover:text-white transition-colors border-dashed">Scrum</div>
+              <div class="px-2.5 py-1 bg-slate-900/80 border border-slate-800 rounded text-[11px] font-medium text-slate-300 hover:bg-slate-800 hover:text-white transition-colors border-dashed">Levantamiento de Requerimientos</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Idiomas -->
       <div class="mt-8">
         <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">Idiomas</h3>
         <div class="flex flex-col gap-2 text-slate-400 text-sm">
@@ -108,8 +121,6 @@
       </div>
     </section>
 
-    <!-- Columna Derecha (Scroll) -->
-    <!-- Proyectos -->
     <section id="projects" class="lg:col-span-7 lg:col-start-6 scroll-mt-24 fade-up" style="animation-delay: 0.1s">
       <div class="flex items-center gap-4 mb-6">
         <h3 class="text-sm font-bold uppercase tracking-[0.2em] text-white">Proyectos Destacados</h3>
@@ -118,26 +129,28 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
         
-        <!-- Tu Nuevo Proyecto Universitario -->
-        <a href="https://robertomcov.github.io/FormacionSociocultural-IV/" target="_blank" rel="noreferrer" class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-pointer">
+        <a href="https://robertomcov.github.io/FormacionSociocultural-IV/" target="_blank" rel="noreferrer" class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-6 rounded-2xl hover:-translate-y-1 hover:bg-slate-900/60 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-pointer">
           <div>
-            <h4 class="text-white font-bold text-base mb-2 flex items-center justify-between">
-              Aprendiendo a Aprender
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-hover:opacity-100 text-sky-400 transition-all translate-x-[-10px] group-hover:translate-x-0"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <h4 class="text-white font-bold text-base mb-2 flex items-center justify-between gap-2">
+              <span class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400/80 group-hover:text-sky-400 transition-colors flex-shrink-0"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Aprendiendo a Aprender
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-hover:opacity-100 text-sky-400 transition-all translate-x-[-10px] group-hover:translate-x-0 flex-shrink-0"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </h4>
             <p class="text-slate-500 text-xs leading-relaxed mb-4">
-              Plataforma educativa universitaria para la asignatura de Formación Sociocultural. Incluye temario interactivo, actividades didácticas, juegos y evaluaciones con Microsoft Forms.
+              Plataforma interactiva diseñada para la asignatura de Formación Sociocultural IV en la UTN. Centraliza el temario académico mediante una interfaz intuitiva que integra recursos multimedia, actividades didácticas lúdicas y sistemas de evaluación automatizados con Microsoft Forms.
             </p>
           </div>
-          <div class="flex items-center gap-3 flex-wrap">
+          <div class="flex items-center gap-3 flex-wrap mt-auto">
             <span class="text-[10px] font-mono text-slate-500">HTML5</span>
-            <span class="text-[10px] font-mono text-slate-500">Bootstrap</span>
-            <span class="text-[10px] font-mono text-slate-500">Responsive</span>
+            <span class="text-[10px] font-mono text-slate-500">Bootstrap 5</span>
+            <span class="text-[10px] font-mono text-slate-500">Responsive Design</span>
+            <span class="text-[10px] font-mono text-slate-500">Microsoft Forms</span>
           </div>
         </a>
 
-        <!-- GamerStore -->
-        <a href="https://robertomcov.github.io/PF-Desarrollo-Web/" target="_blank" rel="noreferrer" class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-pointer">
+        <a href="https://robertomcov.github.io/PF-Desarrollo-Web/" target="_blank" rel="noreferrer" class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-6 rounded-2xl hover:-translate-y-1 hover:bg-slate-900/60 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-pointer">
           <div>
             <h4 class="text-white font-bold text-base mb-2 flex items-center justify-between">
               GamerStore (E-commerce Gaming)
@@ -156,8 +169,7 @@
           </div>
         </a>
 
-        <!-- SmartDrink -->
-        <a href="https://smart-drink-ivory.vercel.app/" target="_blank" rel="noreferrer" class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-pointer">
+        <a href="https://smart-drink-ivory.vercel.app/" target="_blank" rel="noreferrer" class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-6 rounded-2xl hover:-translate-y-1 hover:bg-slate-900/60 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-pointer">
           <div>
             <h4 class="text-white font-bold text-base mb-2 flex items-center justify-between">
               SmartDrink (Full Stack E-commerce)
@@ -176,8 +188,7 @@
           </div>
         </a>
         
-        <!-- EAM -->
-        <div class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl transition-all flex flex-col justify-between cursor-default relative overflow-hidden">
+        <div class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-6 rounded-2xl hover:-translate-y-1 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-default relative overflow-hidden">
           <div>
             <div class="flex items-center justify-between mb-2">
               <h4 class="text-white font-bold text-base">Sistema de Gestión EAM</h4>
@@ -197,8 +208,7 @@
           </div>
         </div>
 
-        <!-- Cobranza -->
-        <div class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl transition-all flex flex-col justify-between cursor-default relative overflow-hidden">
+        <div class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-6 rounded-2xl hover:-translate-y-1 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-default relative overflow-hidden">
           <div>
             <div class="flex items-center justify-between mb-2">
               <h4 class="text-white font-bold text-base">Portal de Cobranza</h4>
@@ -220,7 +230,7 @@
         </div>
 
         <!-- Boveda -->
-        <div class="group bg-slate-900/40 border border-slate-800/60 p-6 rounded-2xl transition-all flex flex-col justify-between cursor-default relative overflow-hidden">
+        <div class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-6 rounded-2xl hover:-translate-y-1 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-default relative overflow-hidden">
           <div>
             <div class="flex items-center justify-between mb-2">
               <h4 class="text-white font-bold text-base">Módulo Bóveda Fiscal</h4>
@@ -243,7 +253,6 @@
       </div>
     </section>
 
-    <!-- Trayectoria -->
     <section id="experience" class="lg:col-span-7 lg:col-start-6 scroll-mt-24 fade-up" style="animation-delay: 0.2s">
       <div class="flex items-center gap-4 mb-6">
         <h3 class="text-sm font-bold uppercase tracking-[0.2em] text-white">Experiencia & Educación</h3>
@@ -251,22 +260,20 @@
       </div>
       
       <div class="space-y-8 ml-2 border-l border-slate-800 pl-8">
-        <!-- Exp 1 -->
         <div class="relative">
           <div class="absolute -left-[37px] top-1.5 h-4 w-4 bg-[#0A0A0C] border rounded-full flex items-center justify-center border-sky-500">
-            <div class="h-1.5 w-1.5 bg-sky-500 rounded-full"></div>
+            <div class="h-1.5 w-1.5 bg-sky-500 rounded-full animate-pulse"></div>
           </div>
           <div class="flex flex-col sm:flex-row sm:justify-between items-baseline mb-1">
             <h4 class="text-sm font-bold text-white">Desarrollador Full Stack</h4>
             <span class="text-[10px] font-mono text-slate-500 mt-1 sm:mt-0">Enero 2024 - Presente</span>
           </div>
-          <p class="text-[11px] text-slate-400 uppercase tracking-widest font-semibold mb-2">Covalu S.C. <span class="text-slate-500">(Colaborador desde 2022)</span></p>
+          <p class="text-[11px] text-slate-400 uppercase tracking-widest font-semibold mb-2">Covalu S.C. <span class="text-slate-500">(Colaborador desde 2022 - <span class="text-sky-400 font-bold">2 años y 3 meses de antigüedad total</span>)</span></p>
           <p class="text-xs text-slate-500 leading-relaxed">
-           Desarrollo del Sistema de Gestión de Mantenimiento Preventivo (EAM) implementado en plantas como Restonic y Mobinsa.
+           Desarrollo del Sistema de Gestión de Mantenimiento Preventivo (EAM), logrando la <strong class="text-slate-200 font-bold">optimización de procesos industriales</strong> para plantas como Restonic y Mobinsa, además de implementar una <strong class="text-slate-200 font-bold">sincronización en tiempo real</strong> de datos.
           </p>
         </div>
 
-        <!-- Exp 2 -->
         <div class="relative">
           <div class="absolute -left-[37px] top-1.5 h-4 w-4 bg-[#0A0A0C] border rounded-full flex items-center justify-center border-slate-700"></div>
           <div class="flex flex-col sm:flex-row sm:justify-between items-baseline mb-1">
@@ -279,7 +286,6 @@
           </p>
         </div>
 
-        <!-- Exp 3 -->
         <div class="relative">
           <div class="absolute -left-[37px] top-1.5 h-4 w-4 bg-[#0A0A0C] border rounded-full flex items-center justify-center border-slate-700"></div>
           <div class="flex flex-col sm:flex-row sm:justify-between items-baseline mb-1">
@@ -294,19 +300,17 @@
       </div>
     </section>
 
-    <!-- Certificaciones -->
     <section id="certifications" class="lg:col-span-7 lg:col-start-6 scroll-mt-24 fade-up" style="animation-delay: 0.3s">
-      <div class="flex items-center gap-4 mb-6 mt-16">
+      <div class="flex items-center gap-4 mb-6">
         <h3 class="text-sm font-bold uppercase tracking-[0.2em] text-white">Certificaciones</h3>
         <div class="h-px flex-1 bg-slate-800"></div>
       </div>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <!-- Certificado 1 -->
-        <a href="https://pub.coderhouse.com/legacy-certificates/6499fdb18b5c4d0002d6fa92?lang=es" target="_blank" rel="noreferrer" class="sm:col-span-2 group bg-sky-900/10 border border-sky-500/40 p-5 rounded-2xl hover:bg-sky-900/20 hover:border-sky-500/60 transition-all flex flex-col justify-between cursor-pointer">
+        <a href="https://pub.coderhouse.com/legacy-certificates/6499fdb18b5c4d0002d6fa92?lang=es" target="_blank" rel="noreferrer" class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-5 rounded-2xl hover:-translate-y-1 hover:bg-slate-900/60 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-pointer">
           <div class="flex items-start justify-between mb-3">
             <h4 class="text-white font-bold text-sm leading-tight pr-4">Carrera de Desarrollo Frontend React</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400 opacity-80 group-hover:opacity-100 transition-opacity flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500 group-hover:text-sky-400 transition-colors duration-300 flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
           </div>
           <div>
             <p class="text-[11px] text-slate-400 mb-1">Finalizado: 03 de junio de 2023</p>
@@ -317,11 +321,10 @@
           </div>
         </a>
 
-        <!-- Certificado 2 -->
-        <a href="https://pub.coderhouse.com/legacy-certificates/63fa584e70de01000ee206af?lang=es" target="_blank" rel="noreferrer" class="group bg-slate-900/40 border border-slate-800/60 p-5 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-pointer">
+        <a href="https://pub.coderhouse.com/legacy-certificates/63fa584e70de01000ee206af?lang=es" target="_blank" rel="noreferrer" class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-5 rounded-2xl hover:-translate-y-1 hover:bg-slate-900/60 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-pointer">
           <div class="flex items-start justify-between mb-3">
             <h4 class="text-white font-bold text-sm leading-tight pr-4">Desarrollo Web</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400 opacity-80 group-hover:opacity-100 transition-opacity flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500 group-hover:text-sky-400 transition-colors duration-300 flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
           </div>
           <div>
             <p class="text-[11px] text-slate-400 mb-1">Finalizado: 28 de enero de 2023</p>
@@ -332,11 +335,10 @@
           </div>
         </a>
 
-        <!-- Certificado 3 -->
-        <a href="https://pub.coderhouse.com/legacy-certificates/6454c399f3133300024785da?lang=es" target="_blank" rel="noreferrer" class="group bg-slate-900/40 border border-slate-800/60 p-5 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-pointer">
+        <a href="https://pub.coderhouse.com/legacy-certificates/6454c399f3133300024785da?lang=es" target="_blank" rel="noreferrer" class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-5 rounded-2xl hover:-translate-y-1 hover:bg-slate-900/60 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-pointer">
           <div class="flex items-start justify-between mb-3">
             <h4 class="text-white font-bold text-sm leading-tight pr-4">JavaScript</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400 opacity-80 group-hover:opacity-100 transition-opacity flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500 group-hover:text-sky-400 transition-colors duration-300 flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
           </div>
           <div>
             <p class="text-[11px] text-slate-400 mb-1">Finalizado: 08 de abril de 2023</p>
@@ -347,11 +349,10 @@
           </div>
         </a>
 
-        <!-- Certificado 4 -->
-        <a href="https://pub.coderhouse.com/legacy-certificates/6499fdb18b5c4d0002d6fa90?lang=es" target="_blank" rel="noreferrer" class="group bg-slate-900/40 border border-slate-800/60 p-5 rounded-2xl hover:bg-slate-900/60 transition-all flex flex-col justify-between cursor-pointer">
+        <a href="https://pub.coderhouse.com/legacy-certificates/6499fdb18b5c4d0002d6fa90?lang=es" target="_blank" rel="noreferrer" class="group backdrop-blur-md bg-slate-900/40 border border-slate-800/40 p-5 rounded-2xl hover:-translate-y-1 hover:bg-slate-900/60 hover:border-sky-500/30 hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 flex flex-col justify-between cursor-pointer">
           <div class="flex items-start justify-between mb-3">
             <h4 class="text-white font-bold text-sm leading-tight pr-4">React Js</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400 opacity-80 group-hover:opacity-100 transition-opacity flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500 group-hover:text-sky-400 transition-colors duration-300 flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
           </div>
           <div>
             <p class="text-[11px] text-slate-400 mb-1">Finalizado: 03 de junio de 2023</p>
@@ -366,7 +367,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="border-t border-slate-800/60 mt-12 relative z-10 w-full bg-[#0A0A0C]/50 backdrop-blur-sm">
     <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
       <p class="text-slate-500 text-[11px] font-mono">
@@ -385,6 +385,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
